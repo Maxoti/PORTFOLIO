@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Developer Maxwell</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #0000ff;
+            padding: 20px 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #ffff00;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 50px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #999;
+            font-size: 18px;
+            margin-bottom: 60px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #0000ff, #00ffff);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: #0000ff;
+            box-shadow: 0 10px 40px rgba(0, 0, 255, 0.4);
+        }
+
+        .project-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #0000ff, #0066ff);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .project-card h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .project-card p {
+            color: #aaa;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background-color: #0000ff;
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .view-more {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            background-color: #0000ff;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0000cc;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 0, 255, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 0 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">Engineer Maxwell</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="content">
+    <h1>My Projects</h1>
+    <p class="subtitle">A showcase of my recent work and technical expertise</p>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-icon">🎓</div>
+            <h2>EduSync School Management System</h2>
+            <p>A complete desktop and web system with authentication, roles, payments, and communication features for modern educational institutions.</p>
+            <div class="tech-tags">
+                <span class="tag">C#</span>
+                <span class="tag">ASP.NET</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">WinForms</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">📱</div>
+            <h2>Rafiki SMS Notification System</h2>
+            <p>Automated SMS alert system leveraging Infobip API to deliver real-time notifications and reminders to users efficiently.</p>
+            <div class="tech-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Infobip API</span>
+                <span class="tag">Express</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">🚗</div>
+            <h2>Uber-Style Android App</h2>
+            <p>A real-time ride request and tracking system built with Firebase, featuring live location tracking and seamless user experience.</p>
+            <div class="tech-tags">
+                <span class="tag">Android</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Google Maps</span>
+                <span class="tag">Java</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">🏪</div>
+            <h2>RetailSync (C# WinForms)</h2>
+            <p>Fast, user-friendly, and reliable Point of Sale (POS) application designed for retail businesses with inventory management.</p>
+            <div class="tech-tags">
+                <span class="tag">C#</span>
+                <span class="tag">WinForms</span>
+                <span class="tag">SQL</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">📚</div>
+            <h2>Node.js EduSync</h2>
+            <p>A modern backend school management system built using Node.js, Express, and PostgreSQL with RESTful API architecture.</p>
+            <div class="tech-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">REST API</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">🚌</div>
+            <h2>Bus Booking Backend</h2>
+            <p>A modern backend bus booking system built using Node.js, Express, and PostgreSQL with secure payment integration.</p>
+            <div class="tech-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">API</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">🏥</div>
+            <h2>MediSync Hospital Management System</h2>
+            <p>A comprehensive hospital management system featuring patient records, appointments, billing, and inventory management for healthcare facilities.</p>
+            <div class="tech-tags">
+                <span class="tag">C#</span>
+                <span class="tag">WinForms</span>
+                <span class="tag">SQL Server</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="view-more">
+        <a href="contacts.html" class="btn">Let's Work Together</a>
+    </div>
+</section>
+
+</body>
+</html>

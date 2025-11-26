@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Maxwell | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #0000ff;
+            padding: 20px 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #ffff00;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 50px;
+            gap: 60px;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            color: #999;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 3px solid #0000ff;
+            box-shadow: 0 10px 40px rgba(0, 0, 255, 0.3);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #0000ff;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0000cc;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #0000ff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #0000ff;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 0 20px;
+            }
+
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+            .profile-image {
+                width: 250px;
+                height: 350px;
+            }
+
+            .cta-buttons {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">Engineer Maxwell</h2>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Maxwell's Portfolio</h1>
+        <p>Software Developer/System Design | Node.js | C# | VB.NET | DevOps</p>
+        <p>Passionate about building innovative solutions and creating seamless digital experiences. Let's bring your ideas to life.</p>
+        
+        <div class="cta-buttons">
+            <a href="projects.html" class="btn btn-primary">View Projects</a>
+            <a href="contacts.html" class="btn btn-secondary">Get In Touch</a>
+        </div>
+    </div>
+
+    <div class="profile-image">
+        <img src="images/maxwell.jpg" alt="Maxwell Profile Photo">
+    </div>
+</section>
+
+</body>
+</html>
