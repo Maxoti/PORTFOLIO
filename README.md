@@ -35,7 +35,7 @@ This project showcases my skills, experience, and projects as a Software Enginee
 
 ##  Contact
 Email: maxoti96@gmail.com  
-Portfolio live link: *(Add Netlify link after deployment)*
+Portfolio live link: Maxoti-Portfolio.Netlify.app
 
 ---
 
